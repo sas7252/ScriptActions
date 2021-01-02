@@ -1,0 +1,11 @@
+;Switches the input source to ps4 dualshock controller
+
+PushToggleMenuKey
+ClickMenuButtonSettings
+ClickSettingsToControlTab
+ClickDropdownInputDevice
+ClickListItemGamepad
+ClickDropdownInputDevicePreset
+ClickListItemPS4Dualshock
+ClickSettingsBackToMenu
+PushToggleMenuKey

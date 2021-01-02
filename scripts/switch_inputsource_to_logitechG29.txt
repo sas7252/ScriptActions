@@ -1,0 +1,11 @@
+;Switches the input source to logitech g29 steering wheel
+
+PushToggleMenuKey
+ClickMenuButtonSettings
+ClickSettingsToControlTab
+ClickDropdownInputDevice
+ClickListItemSteeringWheel
+ClickDropdownInputDevicePreset
+ClickListItemLogitechG29
+ClickSettingsBackToMenu
+PushToggleMenuKey
