@@ -1,0 +1,4 @@
+;just some example script
+
+PushToggleMenuKey
+ClickMenuButtonSettings

@@ -1,9 +1,0 @@
-;Switches the input source to keyboard
-
-PushToggleMenuKey
-ClickMenuButtonSettings
-ClickSettingsToControlTab
-ClickDropdownInputDevice
-ClickListItemKeyboard
-ClickSettingsBackToMenu
-PushToggleMenuKey
