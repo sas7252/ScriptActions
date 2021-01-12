@@ -1,13 +1,11 @@
-# ScriptActions
-a Windows Tool that can be used to quickly move & click the mouse to/at different screen coordinates or press buttons.
+ScriptActions is a Windows Tool that can be used to quickly move & click the mouse to/at different screen coordinates or press buttons.
 
-
-## Getting Started - Basic Concepts
+# Getting Started - Basic Concepts
 Each instructions/interactions is called an action. Actions are globaly named/defined in the 'config/actions.ini' file.
 Each action need a unique name and a assigned key or screen coordinates.
 
 
-### Actions
+## Actions
 Actions are defined in the `config/actions.ini` file.
 They assign a name to an interaction with the keyboard or mouse.
 Each action is prefixed with `Click` (for mouse clicks) or `Push` (for key presses).
@@ -17,18 +15,18 @@ The corresponding pixel coordinates or key is then assigned via the '=' characte
 ClickWindowsStartmenuButton=1928,0
 PushTheKeyA={A}
 ```
-* Pixel Coordinates (x,y) are seperated by a COMMA `,` (not a dot!)
-* A KEY is represented by typing its value in curly brackets `{}` (see example above)
-* Comments may inserted after newline/linebreaks if they are prefixed with a semicolon (`;`)
+- Pixel Coordinates (x,y) are seperated by a COMMA `,` (not a dot!)
+- A KEY is represented by typing its value in curly brackets `{}` (see example above)
+- Comments may inserted after newline/linebreaks if they are prefixed with a semicolon (`;`)
   Only ever start comments at the beginning of a new line! 
-* Do NOT use whitespaces anywhere (except for comments)
+- Do NOT use whitespaces anywhere (except for comments)
 
 Additional hint:
 If you are familiar with the .ini format, you may notice that the first `[Actions]` "section"
 is the only  section. Do NOT insert your own `[section]`s into the file! 
 
 
-### Scripts
+## Scripts
 Scripts are a list of actions that should execute in sequence.
 Scripts are simply  text (.txt) files. They contain one action per line, referenced by its name (from config/actions.ini).
 
@@ -52,7 +50,7 @@ PushTheKeyA
 ```
 This example script would open the windows startmenu and press A three times.
 
-### Script-to-Hotkey-Assignment & KeyMapping
+## Script-to-Hotkey-Assignment & KeyMapping
 If you assign a script to a hotkey, the script (= sequence of actions) will be 
 executed every time that hotkey is pressed.
 
@@ -68,7 +66,7 @@ By default each hotkey is mapped as a function key with the same number.
 That means `HotKey1` is mapped to `F1`, `HotKey2` is mapped to `F2`, ...
 (This behaviour can be changed in `config/main.ini`)
 
-## Running & Stopping
+# Running & Stopping
 Make sure the configuration files are valid before starting the programm.
 Just click ScriptActions.exe to launch a new instance.
 You will see a new tray icon. When hover your cursor above it, it should read `ScriptActions`.
